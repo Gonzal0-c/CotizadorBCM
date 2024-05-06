@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es-419-x-mtfrom-en" dir="ltr">
+  <head>
+    <meta
+      name="google-signin-client-id"
+      content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com"
+    />
+    <meta
+      name="google-signin-scope"
+      content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/webhistory"
+    />
+    <meta property="og:site_name" content="Google Cloud" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#039be5" />
+    <meta charset="utf-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="manifest"
+      href="/_pwa/cloud/manifest.json"
+      crossorigin="use-credentials"
+    />
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="//apis.google.com" crossorigin />
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Google+Sans:400,500,700|Google+Sans+Text:400,400italic,500,500italic,700,700italic|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/devrel-devsite/prod/v98430d67869e4c9fcc4f6174e040606a1a4469c1d96401a32bd7505543a55772/cloud/css/app.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.gstatic.com/devrel-devsite/prod/v98430d67869e4c9fcc4f6174e040606a1a4469c1d96401a32bd7505543a55772/cloud/images/favicons/onecloud/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.gstatic.com/devrel-devsite/prod/v98430d67869e4c9fcc4f6174e040606a1a4469c1d96401a32bd7505543a55772/cloud/images/favicons/onecloud/super_cloud.png"
+    />
+    <link
+      rel="canonical"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=es-419"
+    />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="Google Cloud"
+      href="https://cloud.google.com/s/opensearch.xml?hl=es-419"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-Hans"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=zh-cn"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=fr"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=de"
+    />
+    <link
+      rel="alternate"
+      hreflang="id"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=id"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=it"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=ja"
+    />
+    <link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=ko"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=pt-br"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-419"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=es-419"
+    />
+    <title>
+      Ejemplos de código de JavaScript y del framework de la extensión React
+      &nbsp;|&nbsp; Looker &nbsp;|&nbsp; Google Cloud
+    </title>
+
+    <meta
+      property="og:title"
+      content="Ejemplos de código de JavaScript y del framework de la extensión React &nbsp;|&nbsp; Looker &nbsp;|&nbsp; Google Cloud"
+    />
+    <meta
+      name="description"
+      content="Consulta una variedad de funciones de ejemplo escritas en React y JavaScript."
+    />
+    <meta
+      property="og:description"
+      content="Consulta una variedad de funciones de ejemplo escritas en React y JavaScript."
+    />
+    <meta
+      property="og:url"
+      content="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=es-419"
+    />
+    <meta
+      property="og:image"
+      content="https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png?hl=es-419"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_419" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+
+        "headline": "Ejemplos de código de JavaScript y del framework de la extensión React"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Looker",
+            "item": "https://cloud.google.com/looker"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Documentación",
+            "item": "https://cloud.google.com/looker/docs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ejemplos de código de JavaScript y del framework de la extensión React",
+            "item": "https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples"
+          }
+        ]
+      }
+    </script>
+    <meta
+      name="xsrf_token"
+      content="PDyi-Z-LcOVbbajMNKT0HY5CpQSbMCoPlm7XzzgKwOY6MTcxMDE4NjYwMzU0MzMwMA"
+    />
+
+    <meta name="session_expiry" content="0" />
+    <meta name="uid" content="116438488031391848331" />
+    <link
+      rel="alternate machine-translated-from"
+      hreflang="en"
+      href="https://cloud.google.com/looker/docs/extension-framework-react-and-js-code-examples?hl=en"
+    />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+    <link rel="stylesheet" href="/extras.css" />
+  </head>
+  <body
+    class=""
+    template="page"
+    theme="cloud-theme"
+    type="article"
+    layout="docs"
+    free-trial
+    display-toc
+    pending
+  >
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar>
+      <cloudx-track userCountry="CL"></cloudx-track>
+      <cloudx-utils-init></cloudx-utils-init>
+
+      <devsite-header keep-tabs-visible>
+        <div class="devsite-header--inner nocontent">
+          <div class="devsite-top-logo-row-wrapper-wrapper">
+            <div class="devsite-top-logo-row-wrapper">
+              <div class="devsite-top-logo-row">
+                <button
+                  type="button"
+                  id="devsite-hamburger-menu"
+                  class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+                  data-category="Site-Wide Custom Events"
+                  data-label="Navigation menu button"
+                  visually-hidden
+                  aria-label="Abrir menú"
+                ></button>
+                <div class="devsite-product-name-wrapper">
+                  <a
+                    href="/"
+                    class="devsite-site-logo-link gc-analytics-event"
+                    data-category="Site-Wide Custom Events"
+                    data-label="Site logo"
+                    track-type="globalNav"
+                    track-name="googleCloud"
+                    track-metadata-position="nav"
+                    track-metadata-eventDetail="nav"
+                  >
+                    <img
+                      src="https://www.gstatic.com/devrel-devsite/prod/v98430d67869e4c9fcc4f6174e040606a1a4469c1d96401a32bd7505543a55772/cloud/images/cloud-logo.svg"
+                      class="devsite-site-logo"
+                      alt="Google Cloud"
+                    />
+                  </a>
+
+                  <span class="devsite-product-name">
+                    <ul class="devsite-breadcrumb-list">
+                      <li class="devsite-breadcrumb-item"></li>
+                    </ul>
+                  </span>
+                </div>
+                <div class="devsite-top-logo-row-middle">
+                  <div class="devsite-header-upper-tabs">
+                    <cloudx-tabs-nav class="upper-tabs">
+                      <nav
+                        class="devsite-tabs-wrapper"
+                        aria-label="Pestañas superiores"
+                      >
+                        <tab
+                          class="devsite-dropdown devsite-active devsite-clickable"
+                        >
+                          <a
+                            href="https://cloud.google.com/docs?hl=es-419"
+                            track-metadata-eventdetail="https://cloud.google.com/docs?hl=es-419"
+                            class="devsite-tabs-content gc-analytics-event"
+                            track-type="nav"
+                            track-metadata-position="nav - technology-areas"
+                            track-metadata-module="primary nav"
+                            aria-label="Áreas tecnológicas, selected"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Áreas tecnológicas"
+                            track-name="technology-areas"
+                            track-link-column-type="single-column"
+                          >
+                            Áreas tecnológicas
+                          </a>
+
+                          <a
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-label="Menú desplegable de Áreas tecnológicas"
+                            track-type="nav"
+                            track-metadata-eventdetail="https://cloud.google.com/docs?hl=es-419"
+                            track-metadata-position="nav - technology-areas"
+                            track-metadata-module="primary nav"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Áreas tecnológicas"
+                            track-name="technology-areas"
+                            track-link-column-type="single-column"
+                            class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"
+                          ></a>
+
+                          <div
+                            class="devsite-tabs-dropdown"
+                            aria-label="submenu"
+                            hidden
+                          >
+                            <button
+                              class="devsite-tabs-close-button material-icons button-flat gc-analytics-event"
+                              data-category="Site-Wide Custom Events"
+                              data-label="Close dropdown menu"
+                              aria-label="Cerrar menú desplegable"
+                              track-type="nav"
+                              track-name="close"
+                              track-metadata-eventdetail="#"
+                              track-metadata-position="nav - technology-areas"
+                              track-metadata-module="tertiary nav"
+                            >
+                              close
+                            </button>
+
+                            <div class="devsite-tabs-dropdown-content">
+                              <div class="devsite-tabs-dropdown-column">
+                                <ul class="devsite-tabs-dropdown-section">
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/ai-ml?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/ai-ml?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Soluciones de IA, IA generativa y AA
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/application-development?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/application-development?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Desarrollo de aplicaciones
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/application-hosting?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/application-hosting?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Hosting de aplicaciones
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/compute-area?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/compute-area?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Procesamiento
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/data?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/data?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Canalizaciones y análisis de datos
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/databases?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/databases?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Bases de datos
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/dhm-cloud?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/dhm-cloud?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Nubes híbridas, distribuidas y de
+                                        múltiples nubes
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/industry?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/industry?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Soluciones por sector
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/networking?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/networking?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Redes
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/observability?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/observability?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Observabilidad y supervisión
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/security?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/security?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Seguridad
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/storage?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/storage?hl=es-419"
+                                      track-metadata-position="nav - technology-areas"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Almacenamiento
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </tab>
+
+                        <tab class="devsite-dropdown devsite-clickable">
+                          <a
+                            href="https://cloud.google.com/docs/get-started/common-developer-use-cases?hl=es-419"
+                            track-metadata-eventdetail="https://cloud.google.com/docs/get-started/common-developer-use-cases?hl=es-419"
+                            class="devsite-tabs-content gc-analytics-event"
+                            track-type="nav"
+                            track-metadata-position="nav - crossproduct"
+                            track-metadata-module="primary nav"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Herramientas para todos los productos"
+                            track-name="crossproduct"
+                            track-link-column-type="single-column"
+                          >
+                            Herramientas para todos los productos
+                          </a>
+
+                          <a
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-label="Menú desplegable de Herramientas para todos los productos"
+                            track-type="nav"
+                            track-metadata-eventdetail="https://cloud.google.com/docs/get-started/common-developer-use-cases?hl=es-419"
+                            track-metadata-position="nav - crossproduct"
+                            track-metadata-module="primary nav"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Herramientas para todos los productos"
+                            track-name="crossproduct"
+                            track-link-column-type="single-column"
+                            class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"
+                          ></a>
+
+                          <div
+                            class="devsite-tabs-dropdown"
+                            aria-label="submenu"
+                            hidden
+                          >
+                            <button
+                              class="devsite-tabs-close-button material-icons button-flat gc-analytics-event"
+                              data-category="Site-Wide Custom Events"
+                              data-label="Close dropdown menu"
+                              aria-label="Cerrar menú desplegable"
+                              track-type="nav"
+                              track-name="close"
+                              track-metadata-eventdetail="#"
+                              track-metadata-position="nav - crossproduct"
+                              track-metadata-module="tertiary nav"
+                            >
+                              close
+                            </button>
+
+                            <div class="devsite-tabs-dropdown-content">
+                              <div class="devsite-tabs-dropdown-column">
+                                <ul class="devsite-tabs-dropdown-section">
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/access-resources?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/access-resources?hl=es-419"
+                                      track-metadata-position="nav - crossproduct"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Administración de accesos y recursos
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/devtools?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/devtools?hl=es-419"
+                                      track-metadata-position="nav - crossproduct"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        SDK de Cloud, lenguajes, frameworks y
+                                        herramientas
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/costs-usage?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/costs-usage?hl=es-419"
+                                      track-metadata-position="nav - crossproduct"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Administración de costos y uso
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/iac?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/iac?hl=es-419"
+                                      track-metadata-position="nav - crossproduct"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Infraestructura como código
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs/migration?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs/migration?hl=es-419"
+                                      track-metadata-position="nav - crossproduct"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Migración
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </tab>
+
+                        <tab class="devsite-dropdown devsite-clickable">
+                          <a
+                            href="https://cloud.google.com/?hl=es-419"
+                            track-metadata-eventdetail="https://cloud.google.com/?hl=es-419"
+                            class="devsite-tabs-content gc-analytics-event"
+                            track-type="nav"
+                            track-metadata-position="nav - related-sites"
+                            track-metadata-module="primary nav"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Sitios relacionados"
+                            track-name="related-sites"
+                            track-link-column-type="single-column"
+                          >
+                            Sitios relacionados
+                          </a>
+
+                          <a
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-label="Menú desplegable de Sitios relacionados"
+                            track-type="nav"
+                            track-metadata-eventdetail="https://cloud.google.com/?hl=es-419"
+                            track-metadata-position="nav - related-sites"
+                            track-metadata-module="primary nav"
+                            data-category="Site-Wide Custom Events"
+                            data-label="Tab: Sitios relacionados"
+                            track-name="related-sites"
+                            track-link-column-type="single-column"
+                            class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"
+                          ></a>
+
+                          <div
+                            class="devsite-tabs-dropdown"
+                            aria-label="submenu"
+                            hidden
+                          >
+                            <button
+                              class="devsite-tabs-close-button material-icons button-flat gc-analytics-event"
+                              data-category="Site-Wide Custom Events"
+                              data-label="Close dropdown menu"
+                              aria-label="Cerrar menú desplegable"
+                              track-type="nav"
+                              track-name="close"
+                              track-metadata-eventdetail="#"
+                              track-metadata-position="nav - related-sites"
+                              track-metadata-module="tertiary nav"
+                            >
+                              close
+                            </button>
+
+                            <div class="devsite-tabs-dropdown-content">
+                              <div class="devsite-tabs-dropdown-column">
+                                <ul class="devsite-tabs-dropdown-section">
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/docs?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/docs?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Página principal de documentación de
+                                        Google Cloud
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Página principal de Google Cloud
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/free?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/free?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Prueba gratuita y nivel gratuito
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/architecture?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/architecture?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Centro de arquitectura
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/blog?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/blog?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Blog
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/contact?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/contact?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Comunicarse con Ventas
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/developers?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/developers?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Google Cloud Developer Center
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://developers.google.com/?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://developers.google.com/?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Google Developer Center
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://console.cloud.google.com/marketplace?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://console.cloud.google.com/marketplace?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Google Cloud Marketplace (en la consola)
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/marketplace/docs?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/marketplace/docs?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Documentación de
+                                        Google Cloud Marketplace
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://www.cloudskillsboost.google/paths?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://www.cloudskillsboost.google/paths?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Google Cloud Skills Boost
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/solutions?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/solutions?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Google Cloud Solution Center
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://cloud.google.com/support-hub?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://cloud.google.com/support-hub?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Asistencia de Google Cloud
+                                      </div>
+                                    </a>
+                                  </li>
+
+                                  <li class="devsite-nav-item">
+                                    <a
+                                      href="https://www.youtube.com/@googlecloudtech?hl=es-419"
+                                      track-type="nav"
+                                      track-metadata-eventdetail="https://www.youtube.com/@googlecloudtech?hl=es-419"
+                                      track-metadata-position="nav - related-sites"
+                                      track-metadata-module="tertiary nav"
+                                      tooltip
+                                    >
+                                      <div class="devsite-nav-item-title">
+                                        Canal de YouTube de tecnología de Google
+                                        Cloud
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </tab>
+                      </nav></cloudx-tabs-nav
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></devsite-header
+      >
+    </section>
+  </body>
+</html>

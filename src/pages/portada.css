@@ -1,0 +1,306 @@
+/* Portada Styles */
+.portada {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.portada-header {
+  display: flex;
+  background-color: #2a864a;
+  color: #fff;
+  padding: 0.5px; /* Ajusta el espacio interno del header según sea necesario */
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portada-header img {
+  width: 4%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+.portada-header img {
+  width: 8%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+/* Portada Body Styles */
+
+.portadaBody {
+  flex: 1;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .portada-header {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto del encabezado para pantallas más pequeñas */
+  }
+
+  .portadaBody {
+    padding: 10px; /* Ajusta el relleno del cuerpo para pantallas más pequeñas */
+  }
+}
+
+/* Input Styles */
+input {
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4caf50; /* Cambia el color del borde cuando el input está enfocado */
+}
+
+/* Estilos para el formularioPortada */
+.formularioPortada {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  display: flex; /* Agregado: establece el contenedor como flex */
+  justify-content: space-between; /* Agregado: coloca las columnas alrededor */
+  padding: 10px;
+}
+
+/* Estilos para las columnas */
+.columna1 {
+  background-color: #f2f2f2;
+  flex: 1;
+  padding: 5px; /* Ajusta el espacio interno según sea necesario */
+}
+
+/* También puedes ajustar el margen de los elementos dentro de .columna1 si es necesario */
+.columna1 * {
+  margin: 5px; /* Ajusta el margen interno de los elementos según sea necesario */
+}
+
+.columna2 {
+  background-color: #f2f2f2;
+  flex: 1;
+  padding: 5px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.columna3 {
+  background-color: red;
+  flex: 1;
+  padding: 5px; /* Ajusta el espacio interno según sea necesario */
+}
+
+/* También puedes ajustar el margen de los elementos dentro de .columna2 y .columna3 si es necesario */
+.columna2 *,
+.columna3 * {
+  margin: 5px; /* Ajusta el margen interno de los elementos según sea necesario */
+}
+
+/* Estilos para el inputIndividualPortada */
+.inputIndividualPortada {
+  display: flex;
+  align-items: center;
+}
+
+.inputIndividualPortada p {
+  margin-right: 10px;
+}
+
+.inputIndividualPortada input {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputIndividualPortada input:focus {
+  border-color: #4caf50;
+}
+
+/* Estilos para el inputIndividualPortada */
+.inputIndividualPortada {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.inputIndividualPortada p {
+  margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
+
+.inputIndividualPortada input {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputIndividualPortada input:focus {
+  border-color: #4caf50;
+}
+
+.botonCotizar {
+  background-color: #2a864a;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agregado: transición para el cambio de color */
+}
+
+.botonCotizar:hover {
+  background-color: #45a049;
+}
+
+.botonCotizar:active {
+  background-color: #357834; /* Cambia el color de fondo cuando se hace clic */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Agregado: efecto de sombra */
+}
+
+.botonBorrarCampos {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Añadido: borde */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agregado: transición para el cambio de color */
+  margin-left: 10px;
+}
+
+.botonBorrarCampos:hover {
+  background-color: #f3f3f3;
+}
+
+.botonBorrarCampos:active {
+  background-color: #c3c3c3; /* Cambia el color de fondo cuando se hace clic */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Agregado: efecto de sombra */
+}
+
+.botonVolver {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Añadido: borde */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Agregado: transición para el cambio de color */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.botonVolver:hover {
+  background-color: #f3f3f3;
+}
+
+.botonVolver:active {
+  background-color: #c3c3c3; /* Cambia el color de fondo cuando se hace clic */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Agregado: efecto de sombra */
+}
+
+.containerBotones {
+  height: 50%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-top: 5.8%;
+  display: flex; /* Establece el contenedor como flex */
+  justify-content: flex-end; /* Centra el contenido horizontalmente */
+  align-items: flex-end; /* Centra el contenido verticalmente */
+}
+
+.inputSelectPortada {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s, background-color 0.3s; /* Efecto de transición */
+}
+
+.inputSelectPortada:focus {
+  border-color: #4caf50; /* Cambia el color del borde cuando el menú está enfocado */
+  background-color: #f9f9f9; /* Cambia el color de fondo cuando el menú está enfocado */
+}
+
+.inputSelectPortada option {
+  background-color: #fff; /* Estilo de fondo para las opciones */
+}
+
+.inputSelectPapel {
+  width: 78.5%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s, background-color 0.3s; /* Efecto de transición */
+}
+
+.inputSelectPapel:focus {
+  border-color: #4caf50; /* Cambia el color del borde cuando el menú está enfocado */
+  background-color: #f9f9f9; /* Cambia el color de fondo cuando el menú está enfocado */
+}
+
+.inputSelectPapel option {
+  background-color: #fff; /* Estilo de fondo para las opciones */
+}
+
+.portada-header img {
+  width: 10%;
+  height: auto;
+}
+
+.inputIndividualColor {
+  display: flex;
+  flex-wrap: wrap; /* Permitirá que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+
+.inputIndividualColor p {
+  margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
+
+.inputIndividualColor input {
+  flex: 1; /* Ocupará todo el espacio disponible */
+  min-width: 0; /* Permite que el ancho sea menor que el contenido si es necesario */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputIndividualColor input:focus {
+  border-color: #4caf50;
+}
+
+.inputSelectPorcentajeColor {
+  display: flex;
+  width: 80.5%;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s, background-color 0.3s; /* Efecto de transición */
+  margin: 0.5%;
+  align-items: center;
+  justify-content: center;
+}
